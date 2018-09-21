@@ -7,3 +7,6 @@ __pycache__
 # OSX
 
 .DS_Store
+
+# ok db files
+.ok_*
