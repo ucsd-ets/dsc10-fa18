@@ -6,8 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> width_as_percent > 0.01 and width_as_percent < 0.012
-          True
+          >>> int(round(observed_test_statistic,2))
+          6
           """,
           'hidden': False,
           'locked': False

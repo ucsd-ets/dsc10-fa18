@@ -6,7 +6,11 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> target_sd > 0.002 and target_sd < 0.003
+          >>> len(simulated_test_statistics) == 1000
+          True
+          >>> np.all(simulated_test_statistics <= 30)
+          True
+          >>> np.all(simulated_test_statistics >= 0)
           True
           """,
           'hidden': False,

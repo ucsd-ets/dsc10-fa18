@@ -6,17 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> 0 < q2_1 < 3
-          True
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> # Really? Take a look at our population again!
-          >>> q2_1 != 2
-          True
+          >>> int(round(test_statistic(.5,.5) + test_statistic(.4,.1),1))
+          30
+          >>> int(test_statistic(.4,.1) - test_statistic(.1,.4))
+          0
           """,
           'hidden': False,
           'locked': False

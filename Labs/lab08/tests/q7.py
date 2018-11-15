@@ -6,9 +6,15 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> circuits_midterm_var > 172 and circuits_midterm_var < 174
+          >>> len(model_proportions) % 2 == 0
           True
-          >>> spanish_midterm_var > 83 and spanish_midterm_var < 85
+          >>> len(np.unique(model_proportions)) == 1
+          True
+          >>> sum(model_proportions) == 1
+          True
+          >>> type(simulation_proportion) == float
+          True
+          >>> 0 <= one_test_statistic <= 20
           True
           """,
           'hidden': False,

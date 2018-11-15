@@ -6,8 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> population_sd > 0.4 and population_sd < 0.5
+          >>> type(valid_ts) == list
           True
+          >>> int(sum(valid_ts))
+          2
           """,
           'hidden': False,
           'locked': False

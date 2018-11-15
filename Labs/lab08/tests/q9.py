@@ -6,10 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> cathy_su > 1 and cathy_su < 2
+          >>> 1 <= p_value <= 4
           True
-          >>> sam_su > 0 and sam_su < 0.5
-          True
+          >>> int(p_value)
+          2
           """,
           'hidden': False,
           'locked': False

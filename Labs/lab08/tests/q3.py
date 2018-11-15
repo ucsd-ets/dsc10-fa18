@@ -6,10 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> circuits_midterm_sd > 12 and circuits_midterm_sd < 14
+          >>> 0 <= expected_correct <= 1
           True
-          >>> spanish_midterm_sd > 8 and spanish_midterm_sd < 10
-          True
+          >>> int(expected_correct - 0.5)
+          0
           """,
           'hidden': False,
           'locked': False
