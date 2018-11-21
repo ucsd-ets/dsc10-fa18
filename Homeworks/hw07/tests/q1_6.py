@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(jake_siblings, float)
+          >>> import numbers
+          >>> isinstance(jake_siblings, numbers.Real)
           True
           """,
           'hidden': False,
