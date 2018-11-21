@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(turkey_mean, float)
+          >>> import numbers
+          >>> isinstance(turkey_mean, numbers.Real)
           True
           """,
           'hidden': False,

@@ -6,9 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(left_endpoint, float)
+          >>> import numbers
+          >>> isinstance(left_endpoint, numbers.Real)
           True
-          >>> isinstance(right_endpoint, float)
+          >>> isinstance(right_endpoint, numbers.Real)
           True
           >>> left_endpoint <= right_endpoint
           True

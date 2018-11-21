@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(fiftieth_percentile, int)
+          >>> import numbers
+          >>> isinstance(fiftieth_percentile, numbers.Integral)
           True
           """,
           'hidden': False,

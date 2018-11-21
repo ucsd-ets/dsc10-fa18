@@ -6,9 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> isinstance(lower_bound, float)
+          >>> import numbers
+          >>> isinstance(lower_bound, numbers.Real)
           True
-          >>> isinstance(upper_bound, float)
+          >>> isinstance(upper_bound, numbers.Real)
           True
           >>> lower_bound <= upper_bound
           True
